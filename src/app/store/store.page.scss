@@ -1,0 +1,67 @@
+ion-icon{
+    font-size: 2rem;
+}
+.logo{
+    width: 55%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+.tipo{
+    color: rgb(163, 164, 165);
+}
+.main-div{
+    h1{
+        font-size: 1,7rem;
+    }
+    .list{
+        margin-top: 50px;
+        ion-item:part(native){
+            padding: 0;
+        }
+        ion-item{
+            margin-top: 20px;
+            color: rgb(255, 255, 255);
+            --border-color: rgb(255, 0, 0);
+            
+            ion-label{
+              font-size: 1.2rem;
+              font-weight: 500; 
+              p {
+                font-size: 0.8rem;
+                margin-top: 5px;
+              }
+              
+          }
+          p.expense{
+            color: rgb(102, 25, 25);
+          }
+            p.income{
+                color: rgb(94, 225, 248);
+            }
+          p.amount{
+                font-weight: 700;
+                color: black;
+        }
+          
+        }
+        ion-item-sliding:last-child{
+            margin-bottom: 50px;
+        }
+        ion-item-sliding.item-sliding-active-option-end ion-item{
+            padding-right: 20px;
+        }
+        ion-item-option{
+            border-radius: 40px;
+            height: 38px;
+            width: 38px;
+            margin-top: 30px;
+            margin-trim: 4px;
+        }
+    }
+    ion-fab-button{
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+    }
+}

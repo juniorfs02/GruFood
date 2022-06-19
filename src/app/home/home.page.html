@@ -1,0 +1,86 @@
+<ion-content >
+  
+  
+  <ion-slides class="listSlides" [options]='slideOpts' pager="true">
+    <ion-slide>
+      <div routerLink="/store">
+        <img src="../../assets/img/grufoodpro.png">
+      </div>
+    </ion-slide>
+    <ion-slide>
+      <div routerLink="/store">
+        <img src="../../assets/img/grufoodres.png">
+      </div>
+    </ion-slide>
+    <ion-slide>
+      <div routerLink="/store">
+        <img src="../../assets/img/grufoodrbg.png">
+      </div>
+    </ion-slide>
+  </ion-slides>  
+
+<ion-slides [options]='slideOpts3'>
+  <ion-slide >
+    <div class="category" routerLink="/store">
+      <p>LISTA</p>
+    </div>
+  </ion-slide>
+  <ion-slide >
+    <div class="category"  routerLink="/sobre">
+      <p>SOBRE</p>
+    </div>
+  </ion-slide>
+  <ion-slide >
+    <div class="category" routerLink="">
+      <p>LOGOUT</p>
+    </div>
+  </ion-slide>
+</ion-slides>
+
+<ion-item lines='none'>
+  Recomendados 
+</ion-item>
+<ion-slides class="listSlides" [options]='slideOpts3'>
+  <ion-slide>
+    <div>
+      <img src="../../assets/img/bk.png">
+    </div>
+  </ion-slide>
+  <ion-slide>
+    <div>
+      <img src="../../assets/img/kfc.png">
+    </div>
+  </ion-slide>
+  <ion-slide>
+    <div>
+      <img src="../../assets/img/mcd.png">
+    </div>
+  </ion-slide>
+  <ion-slide>
+    <div>
+      <img src="../../assets/img/giraffas.png">
+    </div>
+  </ion-slide>
+</ion-slides>
+
+<ion-item lines='none'>
+  Novos em Guarulhos
+</ion-item>
+<ion-slides class="listSlides" [options]='slideOpts3'>
+  <ion-slide>
+    <div>
+      <img src="../../assets/img/cb.png">
+    </div>
+  </ion-slide>
+  <ion-slide>
+    <div>
+      <img src="../../assets/img/charada.png">
+    </div>
+  </ion-slide>
+  <ion-slide>
+    <div>
+      <img src="../../assets/img/rafa.png">`
+    </div>
+  </ion-slide>
+</ion-slides>
+</ion-content>

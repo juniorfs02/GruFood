@@ -1,0 +1,23 @@
+<ion-content>
+  <ion-icon name="arrow-back-outline" color="dark" class="ion-padding" routerLink="/store"></ion-icon>
+  <div class="main-section">
+    <h3 class="ion-padding">{{isEdit ? 'Editar Restaurante' : 'Adicionar Restaurante'}}</h3>
+    <div class="form ion-padding ion-margin">
+
+      <ion-select interface="action-sheet" [(ngModel)]="type" placeholder="Selecione o tipo">
+        <ion-select-option value="Fast Food">Fast-Food</ion-select-option>
+        <ion-select-option value="Restaurante">Restaurante</ion-select-option>
+        <ion-select-option value="Pizzaria">Pizzaria</ion-select-option>
+        <ion-select-option value="Outro">Outro</ion-select-option>
+      </ion-select>
+
+      <ion-input placeholder="Titulo" [(ngModel)] = "title"></ion-input>
+      <ion-input placeholder="Descrição" [(ngModel)] = "subTitle"></ion-input>
+      <ion-input placeholder="Endereço" [(ngModel)] = "address"></ion-input>
+      <ion-input placeholder="Preço Médio" type="number" [(ngModel)] = "amount"></ion-input>
+
+      <ion-button color="dark" (click)="addTransaction()">{{isEdit ? 'Editar' : 'Adicionar'}}&nbsp;<ion-spinner *ngIf="loading"></ion-spinner> </ion-button>
+
+    </div>
+  </div>
+</ion-content>

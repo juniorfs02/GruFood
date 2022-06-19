@@ -1,0 +1,59 @@
+
+.form{
+    padding-top: 240px;
+}
+
+ion-item{
+--border-radius: 10px;
+
+ion-input{
+    --color: rgb(255, 255, 255);
+}}
+
+
+#cad{
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: 100%;
+    bottom: 25%;
+    font-size: 12px;
+}
+.fundo{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    background: #ff0014;
+
+#logo{
+    padding-top: 8%;
+    padding-bottom: 50px;
+    width: 50%;
+    align-items: center;
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    font-size: 30px;
+    color: black;
+}
+span{
+    color: #fff;
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: 80%;
+    bottom: 10%;
+}
+
+#logg{
+    color: rgb(37, 37, 37);
+    font-weight: bolder;
+}
+
+
+}

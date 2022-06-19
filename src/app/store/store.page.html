@@ -1,0 +1,42 @@
+<ion-content>
+  <ion-icon name="arrow-back-outline" color="dark" class="ion-padding" routerLink="/home"></ion-icon>
+  <div class="logo">
+    <img src="../../assets/img/grufoodnbg.png">
+  </div>
+  <div class="main-div ion-padding">
+    <h1 class="ion-padding">Lista de Restaurantes</h1>
+
+    <div class="list">
+      <ion-list>
+        <ion-item-sliding *ngFor="let transaction of grufoodTransactions">        
+          <ion-item>  
+            <ion-label>
+              {{transaction.title}}
+              <p [ngClass]="{expense: transaction.type == 'expense', income: transaction.type == 'expense'}">{{transaction.subTitle}}</p>
+              <p [ngClass]="{expense: transaction.type == 'expense', income: transaction.type == 'expense'}">{{transaction.address}}</p>
+              <div class="tipo">
+              <p [ngClass]="{expense: transaction.type == 'expense', income: transaction.type == 'expense'}">{{transaction.type}} </p>
+              </div>
+            </ion-label>
+              <p [ngClass]="{expense: transaction.type == 'expense', income: transaction.type == 'expense'}">Média R${{transaction.amount}}</p>
+          </ion-item>
+          <ion-item-options side="end">
+            <ion-item-option color="danger">
+              <ion-icon name="trash-outline" (click)="delete_transaction(transaction.id)"></ion-icon>
+            </ion-item-option>
+            <ion-item-option color="dark">
+              <ion-icon name="create-outline" routerLink="/edit-store/{{transaction.id}}"></ion-icon>
+            </ion-item-option>
+          </ion-item-options>
+        </ion-item-sliding>
+
+        
+
+        
+      </ion-list>
+    </div>
+    <ion-fab-button color="dark">
+      <ion-icon name="add-outline" routerLink="/edit-store/add"></ion-icon>  
+    </ion-fab-button>
+  </div>
+</ion-content>
