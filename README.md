@@ -1,7 +1,7 @@
 # Aplicativo IONIC
 
-Aplicativo desenvolvido em Ionic e Firebase, em que o usuário pode visualizar e registrar valores de mercado de jogadores de futebol
+Aplicativo desenvolvido em Ionic e Firebase, em que o usuário pode visualizar e registrar os melhores restaurantes da região.
 
 **Link do Projeto:**
 
-https://projpe-fac26.web.app/
+https://appnovo-8e919.web.app/
